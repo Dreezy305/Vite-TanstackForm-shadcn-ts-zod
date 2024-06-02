@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { z } from "zod";
 
 export type TFormData = {
@@ -9,7 +10,7 @@ export type TFormData = {
   business_website: string;
   business_description: string;
   phone_number: string;
-  date_of_birth: string;
+  date_of_birth: Date | any;
   gender: string;
   city: string;
   state: string;
